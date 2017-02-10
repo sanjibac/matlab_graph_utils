@@ -28,3 +28,24 @@ plot_path( path, coord_set );
 
 %% Save graph
 save_graph( '../resources/test.txt', G );
+
+%% Load graph
+% clear G;
+% G = load_graph( '../resources/test.txt');
+% % reconfirm graph
+% figure;
+% axis(bbox);
+% view_graph( G, coord_set );
+% [~, path] = graphshortestpath(G, start_idx, goal_idx);
+% plot_path( path, coord_set );
+
+%% Lets collision check
+load ../resources/world.mat;
+
+line_coll_check_fn = @(parent, child) check_coll_line_map( parent, child, map );
+pt_coll_check_fn = @(pt) check_coll_wpset_map( pt, map ); 
+status = collision_check_2d_graph( G, coord_set, line_coll_check_fn, pt_coll_check_fn );
+figure;
+axis(bbox);
+visualize_map(map);
+view_graph( status, coord_set );
