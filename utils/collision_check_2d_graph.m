@@ -15,6 +15,7 @@ for i = 1:nnz(G)
         status(p(i), c(i)) = 0;
     else
         status(p(i), c(i)) = 1;
+    end
 end
 
 end
