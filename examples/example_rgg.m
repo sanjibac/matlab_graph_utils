@@ -9,6 +9,7 @@ bbox = [0 1 0 1];
 N = 100;
 
 [ G, coord_set ] = rgg( bbox, N);
+G = tril(G);
 figure;
 axis(bbox);
 view_graph( G, coord_set );
@@ -19,12 +20,13 @@ view_graph( G, coord_set );
 
 
 %% Path
-[~, path] = graphshortestpath(G, start_idx, goal_idx);
-plot_path( path, coord_set );
+% [~, path] = graphshortestpath(G, start_idx, goal_idx, 'directed', false);
+% plot_path( path, coord_set );
 
 %% K-Shortest paths
-% [~, path_set] = graphkshortestpaths(G, start_idx, goal_idx, 10);
-% plot_path_set( path_set, coord_set );
+G1 = G + tril(G, -1)';
+[~, path_set] = graphkshortestpaths(G1, start_idx, goal_idx, 10);
+plot_path_set( path_set, coord_set );
 
 %% Save graph
 save_graph( '../resources/test.txt', G );
@@ -40,12 +42,12 @@ save_graph( '../resources/test.txt', G );
 % plot_path( path, coord_set );
 
 %% Lets collision check
-load ../resources/world.mat;
-
-line_coll_check_fn = @(parent, child) check_coll_line_map( parent, child, map );
-pt_coll_check_fn = @(pt) check_coll_wpset_map( pt, map ); 
-status = collision_check_2d_graph( G, coord_set, line_coll_check_fn, pt_coll_check_fn );
-figure;
-axis(bbox);
-visualize_map(map);
-view_graph( status, coord_set );
+% load ../resources/world.mat;
+% 
+% line_coll_check_fn = @(parent, child) check_coll_line_map( parent, child, map );
+% pt_coll_check_fn = @(pt) check_coll_wpset_map( pt, map ); 
+% status = collision_check_2d_graph( G, coord_set, line_coll_check_fn, pt_coll_check_fn );
+% figure;
+% axis(bbox);
+% visualize_map(map);
+% view_graph( status, coord_set );
