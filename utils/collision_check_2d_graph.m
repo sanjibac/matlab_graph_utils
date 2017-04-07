@@ -3,6 +3,7 @@ function status = collision_check_2d_graph( G, coord_set, line_coll_check_fn, pt
 %   Detailed explanation goes here
 
 status = sparse(G);
+G = tril(G);
 [p, c] = ind2sub(size(G), find(G));
 for i = 1:nnz(G)
     p_coord = coord_set(p(i),:);
@@ -16,6 +17,7 @@ for i = 1:nnz(G)
     else
         status(p(i), c(i)) = 1;
     end
+    status(c(i), p(i)) = status(p(i), c(i));
 end
 
 end
