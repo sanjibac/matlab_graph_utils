@@ -2,8 +2,8 @@ function plot_map_graph_edge_outcome( map, G, coord_set, selected_edge_outcome_m
 %UNTITLED2 Summary of this function goes here
 %   Detailed explanation goes here
 
-visualize_map(map);
-view_graph( G, coord_set );
+% visualize_map(map);
+% view_graph( G, coord_set );
 for i = 1:size(selected_edge_outcome_matrix,1)
     if (selected_edge_outcome_matrix(i,2)==1)
         col = [0 1 0];
