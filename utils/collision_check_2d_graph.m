@@ -1,3 +1,9 @@
+%% 
+% Copyright (c) 2017 Carnegie Mellon University, Sanjiban Choudhury <sanjibac@andrew.cmu.edu>
+%
+% For License information please see the LICENSE file in the root directory.
+%
+
 function status = collision_check_2d_graph( G, coord_set, line_coll_check_fn, pt_coll_check_fn )
 %UNTITLED5 Summary of this function goes here
 %   Detailed explanation goes here

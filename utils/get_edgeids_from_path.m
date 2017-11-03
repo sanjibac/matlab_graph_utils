@@ -1,3 +1,9 @@
+%% 
+% Copyright (c) 2017 Carnegie Mellon University, Sanjiban Choudhury <sanjibac@andrew.cmu.edu>
+%
+% For License information please see the LICENSE file in the root directory.
+%
+
 function edge_ids = get_edgeids_from_path( path, G )
 %UNTITLED Summary of this function goes here
 %   Detailed explanation goes here

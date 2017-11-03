@@ -1,3 +1,9 @@
+%% 
+% Copyright (c) 2017 Carnegie Mellon University, Sanjiban Choudhury <sanjibac@andrew.cmu.edu>
+%
+% For License information please see the LICENSE file in the root directory.
+%
+
 function plot_edgeid( edge_id, G, coord_set, col, lw )
 %UNTITLED Summary of this function goes here
 %   Detailed explanation goes here

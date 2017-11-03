@@ -1,3 +1,9 @@
+%% 
+% Copyright (c) 2017 Carnegie Mellon University, Sanjiban Choudhury <sanjibac@andrew.cmu.edu>
+%
+% For License information please see the LICENSE file in the root directory.
+%
+
 function feasibility_vector = path_set_feasible_vector( G, path_set )
 %UNTITLED9 Summary of this function goes here
 %   Detailed explanation goes here

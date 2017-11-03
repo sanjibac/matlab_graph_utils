@@ -1,3 +1,9 @@
+%% 
+% Copyright (c) 2017 Carnegie Mellon University, Sanjiban Choudhury <sanjibac@andrew.cmu.edu>
+%
+% For License information please see the LICENSE file in the root directory.
+%
+
 %% Example RGG
 clc;
 clear;

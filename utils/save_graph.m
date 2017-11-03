@@ -1,3 +1,9 @@
+%% 
+% Copyright (c) 2017 Carnegie Mellon University, Sanjiban Choudhury <sanjibac@andrew.cmu.edu>
+%
+% For License information please see the LICENSE file in the root directory.
+%
+
 function save_graph( filename, G )
 %SAVE_GRAPH Summary of this function goes here
 %   Detailed explanation goes here

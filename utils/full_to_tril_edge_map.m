@@ -1,3 +1,9 @@
+%% 
+% Copyright (c) 2017 Carnegie Mellon University, Sanjiban Choudhury <sanjibac@andrew.cmu.edu>
+%
+% For License information please see the LICENSE file in the root directory.
+%
+
 function [ old2new_edge_map ] = full_to_tril_edge_map( G )
 %UNTITLED21 Summary of this function goes here
 %   Detailed explanation goes here

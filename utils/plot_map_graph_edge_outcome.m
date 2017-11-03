@@ -1,3 +1,9 @@
+%% 
+% Copyright (c) 2017 Carnegie Mellon University, Sanjiban Choudhury <sanjibac@andrew.cmu.edu>
+%
+% For License information please see the LICENSE file in the root directory.
+%
+
 function plot_map_graph_edge_outcome( map, G, coord_set, selected_edge_outcome_matrix )
 %UNTITLED2 Summary of this function goes here
 %   Detailed explanation goes here

@@ -1,3 +1,9 @@
+%% 
+% Copyright (c) 2017 Carnegie Mellon University, Sanjiban Choudhury <sanjibac@andrew.cmu.edu>
+%
+% For License information please see the LICENSE file in the root directory.
+%
+
 function [ Gnew, coll_check_results_new, edge_check_cost_new, path_edgeid_map_new, region_test_new ] = remove_redundant_edges( G,coll_check_results, edge_check_cost, path_edgeid_map, region_test  )
 %UNTITLED22 Summary of this function goes here
 %   Detailed explanation goes here

@@ -1,3 +1,9 @@
+%% 
+% Copyright (c) 2017 Carnegie Mellon University, Sanjiban Choudhury <sanjibac@andrew.cmu.edu>
+%
+% For License information please see the LICENSE file in the root directory.
+%
+
 function path_set = merge_pathsets( path_set_1, path_set_2 )
 %UNTITLED6 Summary of this function goes here
 %   Detailed explanation goes here

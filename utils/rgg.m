@@ -1,3 +1,9 @@
+%% 
+% Copyright (c) 2017 Carnegie Mellon University, Sanjiban Choudhury <sanjibac@andrew.cmu.edu>
+%
+% For License information please see the LICENSE file in the root directory.
+%
+
 function [ G, coord_set ] = rgg( bbox, N, eta )
 %RGG A 2D RGG graph
 %   G: is the (sparse) graph (NxN)
