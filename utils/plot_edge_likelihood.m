@@ -17,7 +17,8 @@ if (~isempty(candidate_tests))
     candidate_gain = edge_likelihood;    
     for t = candidate_tests
         v = candidate_gain(t);
-        plot_edgeid( t, graph, coord_set, get_color_interp(cmap, v), 4*v );
+        %plot_edgeid( t, graph, coord_set, get_color_interp(cmap, v), 4*v );
+        plot_edgeid( t, graph, coord_set, [0.7 0.7 0.7], 4*v );
     end
 end
 
